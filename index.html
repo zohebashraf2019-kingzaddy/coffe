@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="en" data-theme="night">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Karajillo &amp; Co. | Latin Coffee &amp; Cocktail Lounge in Downtown Reno</title>
+  <meta name="description" content="Karajillo &amp; Co. is a Latin-inspired coffee and cocktail lounge in downtown Reno. Espresso by day, Carajillos and craft cocktails by night. Open daily 7am to 11pm." />
+  <meta property="og:title" content="Karajillo &amp; Co. | Coffee &amp; Cantina, Downtown Reno" />
+  <meta property="og:description" content="Espresso by day, Carajillos by night. 50 N Sierra St, Reno. Open daily 7am to 11pm." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="images/backbar-gold.webp" />
+  <meta name="theme-color" content="#1b1410" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Local business structured data for Google -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CafeOrCoffeeShop",
+    "name": "Karajillo & Co.",
+    "url": "https://karajillocafe.com/",
+    "telephone": "+1-775-221-7598",
+    "servesCuisine": ["Coffee", "Cocktails", "Latin"],
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "50 N Sierra Street, Suite 102A",
+      "addressLocality": "Reno",
+      "addressRegion": "NV",
+      "postalCode": "89501",
+      "addressCountry": "US"
+    },
+    "openingHoursSpecification": [{
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+      "opens": "07:00", "closes": "23:00"
+    }],
+    "sameAs": ["https://www.instagram.com/karajillocafe/", "https://www.yelp.com/biz/karajillo-and-co-reno"]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <!-- ============ HEADER ============ -->
+  <header class="site-header" id="top">
+    <a class="wordmark" href="#top" aria-label="Karajillo &amp; Co. home">
+      <span class="wordmark__name">Karajillo</span><span class="wordmark__amp">&amp; Co.</span>
+    </a>
+
+    <nav class="nav" id="nav" aria-label="Main">
+      <a href="#menu">Menu</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#story">Story</a>
+      <a href="#visit">Visit</a>
+    </nav>
+
+    <div class="header-tools">
+      <span class="status" data-status aria-live="polite"><span class="status__dot"></span><span data-status-text>Checking hours</span></span>
+      <button class="mode-toggle" type="button" data-mode-toggle aria-pressed="true">
+        <span class="mode-toggle__track" aria-hidden="true"><span class="mode-toggle__knob"></span></span>
+        <span data-mode-label>Switch to café</span>
+      </button>
+      <button class="nav-burger" type="button" aria-controls="nav" aria-expanded="false" data-burger>
+        <span></span><span></span><span class="sr-only">Open menu</span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ============ HERO ============ -->
+    <section class="hero" aria-labelledby="hero-title">
+      <canvas class="hero__canvas" data-crema aria-hidden="true"></canvas>
+
+      <div class="hero__copy">
+        <h1 class="hero__title" id="hero-title">
+          <span class="hero__line hero__line--day"><span class="split">Café by day.</span></span>
+          <span class="hero__line hero__line--night"><span class="split">Cantina by night.</span></span>
+        </h1>
+        <p class="hero__lede">
+          A Latin-inspired coffee and cocktail lounge on the Riverwalk in downtown Reno.
+          Espresso from 7am, Carajillos until 11pm.
+        </p>
+        <div class="hero__actions">
+          <a class="btn btn--solid" href="#menu">See the menu</a>
+          <a class="btn btn--ghost" data-link="maps" target="_blank" rel="noopener">Get directions</a>
+        </div>
+        <p class="hero__hint" aria-hidden="true">Move across the page to stir the crema</p>
+      </div>
+
+      <figure class="hero__frame">
+        <img class="hero__img hero__img--day" src="images/latte-at-the-bar.webp" alt="Latte with leaf art on the bar at Karajillo &amp; Co." width="382" height="510" />
+        <img class="hero__img hero__img--night" src="images/backbar-gold.webp" alt="The gold-lit back bar at Karajillo &amp; Co." width="680" height="510" />
+      </figure>
+    </section>
+
+    <!-- ============ SIGNATURE STRIP ============ -->
+    <section class="signature" aria-label="The signature drink">
+      <p>
+        The Carajillo is Licor 43 shaken with fresh espresso. Ours adds tequila and
+        a banana foam, and we named the house after it.
+      </p>
+      <a class="text-link" href="#menu" data-goto-tab="cantina">Find it on the cantina menu</a>
+    </section>
+
+    <!-- ============ MENU ============ -->
+    <section class="menu" id="menu" aria-labelledby="menu-title">
+      <div class="section-head">
+        <h2 id="menu-title">The menu</h2>
+        <p class="section-head__sub">It moves with the clock. Switch between the two and the whole site follows.</p>
+      </div>
+
+      <div class="tabs" role="tablist" aria-label="Menu">
+        <button role="tab" id="tab-cafe" aria-controls="panel-cafe" data-tab="cafe">Café</button>
+        <button role="tab" id="tab-cantina" aria-controls="panel-cantina" data-tab="cantina">Cantina</button>
+        <span class="tabs__ink" aria-hidden="true"></span>
+      </div>
+
+      <div class="menu__panels">
+        <div class="menu__panel" role="tabpanel" id="panel-cafe" aria-labelledby="tab-cafe" data-panel="cafe"></div>
+        <div class="menu__panel" role="tabpanel" id="panel-cantina" aria-labelledby="tab-cantina" data-panel="cantina"></div>
+      </div>
+
+      <!-- Drink finder -->
+      <div class="finder" aria-labelledby="finder-title">
+        <h3 id="finder-title">Not sure what to order?</h3>
+        <fieldset class="finder__set">
+          <legend>When are you coming in?</legend>
+          <div class="chips" data-finder="when"></div>
+        </fieldset>
+        <fieldset class="finder__set">
+          <legend>What are you in the mood for?</legend>
+          <div class="chips" data-finder="mood"></div>
+        </fieldset>
+        <output class="finder__result" data-finder-result aria-live="polite">Pick one of each and we'll point you to a drink.</output>
+      </div>
+    </section>
+
+    <!-- ============ STORY ============ -->
+    <section class="story" id="story" aria-labelledby="story-title">
+      <figure class="story__img">
+        <img src="images/golden-ram-wall.webp" alt="Golden ram head beside the Karajillo &amp; Co. sign" loading="lazy" width="382" height="510" />
+      </figure>
+      <div class="story__copy">
+        <h2 id="story-title">Where espresso meets the spirits shelf</h2>
+        <p>
+          Karajillo &amp; Co. was built around one drink: the Carajillo, espresso and
+          Licor 43 over ice. From there the menu runs both ways, into piloncillo and
+          dulce de leche lattes in the morning and into masa, jamaica and coconut
+          cocktails at night.
+        </p>
+        <p>
+          The room does the same. Sage cabinets and a checkerboard floor for your
+          morning laptop session, a gold-lit wall of tequila, mezcal and whiskey
+          for when the sun goes down over the river.
+        </p>
+        <p class="story__team">
+          From the team behind Toro Bravo, La Condesa and Mexcal.
+        </p>
+      </div>
+    </section>
+
+    <!-- ============ GALLERY ============ -->
+    <section class="gallery" id="gallery" aria-labelledby="gallery-title">
+      <div class="section-head">
+        <h2 id="gallery-title">Inside Karajillo</h2>
+        <div class="chips chips--filter" role="group" aria-label="Filter photos" data-gallery-filters>
+          <button class="chip" data-filter="all" aria-pressed="true">All</button>
+          <button class="chip" data-filter="drinks" aria-pressed="false">Drinks</button>
+          <button class="chip" data-filter="bar" aria-pressed="false">The bar</button>
+          <button class="chip" data-filter="room" aria-pressed="false">The room</button>
+        </div>
+      </div>
+      <ul class="grid" data-gallery></ul>
+    </section>
+
+    <!-- ============ SOCIAL ============ -->
+    <section class="social" aria-labelledby="social-title">
+      <h2 id="social-title" class="social__title">Follow along, leave a word</h2>
+      <div class="social__row">
+        <a class="social-card social-card--ig" data-link="instagram" target="_blank" rel="noopener" data-tilt>
+          <div class="ig-grid" data-ig-grid aria-hidden="true"></div>
+          <div class="social-card__body">
+            <svg class="social-card__icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="17.4" cy="6.6" r="1.2" fill="currentColor"/></svg>
+            <strong>Instagram</strong>
+            <span data-text="instagramHandle">@karajillocafe</span>
+            <span class="social-card__cta">New drinks and late-night specials</span>
+          </div>
+        </a>
+
+        <a class="social-card social-card--yelp" data-link="yelp" target="_blank" rel="noopener" data-tilt>
+          <div class="stars" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M12 2.5l2.9 6.2 6.6.7-5 4.5 1.4 6.6L12 17.2l-5.9 3.3 1.4-6.6-5-4.5 6.6-.7z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 2.5l2.9 6.2 6.6.7-5 4.5 1.4 6.6L12 17.2l-5.9 3.3 1.4-6.6-5-4.5 6.6-.7z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 2.5l2.9 6.2 6.6.7-5 4.5 1.4 6.6L12 17.2l-5.9 3.3 1.4-6.6-5-4.5 6.6-.7z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 2.5l2.9 6.2 6.6.7-5 4.5 1.4 6.6L12 17.2l-5.9 3.3 1.4-6.6-5-4.5 6.6-.7z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 2.5l2.9 6.2 6.6.7-5 4.5 1.4 6.6L12 17.2l-5.9 3.3 1.4-6.6-5-4.5 6.6-.7z"/></svg>
+          </div>
+          <div class="social-card__body">
+            <strong>Yelp</strong>
+            <span>Read what Reno is saying</span>
+            <span class="social-card__cta">Open reviews and photos</span>
+          </div>
+        </a>
+
+        <a class="social-card social-card--maps" data-link="maps" target="_blank" rel="noopener" data-tilt>
+          <svg class="pin" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22s7-6.2 7-12a7 7 0 10-14 0c0 5.8 7 12 7 12z" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="10" r="2.6" fill="currentColor"/></svg>
+          <div class="social-card__body">
+            <strong>Google Maps</strong>
+            <span>50 N Sierra St, on the Riverwalk</span>
+            <span class="social-card__cta">Directions and reviews</span>
+          </div>
+        </a>
+      </div>
+      <p class="social__write">Been in already? <a data-link="yelpWriteReview" target="_blank" rel="noopener">Write a review on Yelp</a>. It helps more than you'd think.</p>
+    </section>
+
+    <!-- ============ VISIT ============ -->
+    <section class="visit" id="visit" aria-labelledby="visit-title">
+      <div class="visit__info">
+        <h2 id="visit-title">Come by</h2>
+        <dl class="visit__list">
+          <div><dt>Hours</dt><dd><span data-text="hoursLabel">Open daily, 7am to 11pm</span><br /><span class="visit__status" data-status-text>Checking hours</span></dd></div>
+          <div><dt>Address</dt><dd data-address>50 N Sierra Street, Suite 102A<br />Reno, NV 89501</dd></div>
+          <div><dt>Phone</dt><dd><a data-tel>775-221-7598</a></dd></div>
+        </dl>
+        <div class="hero__actions">
+          <a class="btn btn--solid" data-link="maps" target="_blank" rel="noopener">Get directions</a>
+          <a class="btn btn--ghost" data-tel>Call us</a>
+        </div>
+      </div>
+      <div class="visit__map">
+        <iframe title="Map showing Karajillo &amp; Co. at 50 N Sierra St, Reno" data-map loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p class="site-footer__mark">Karajillo &amp; Co.</p>
+    <p>Coffee &amp; Cantina. 50 N Sierra St, Reno. Please drink responsibly, 21+ for cocktails.</p>
+    <p class="site-footer__links">
+      <a data-link="instagram" target="_blank" rel="noopener">Instagram</a>
+      <a data-link="yelp" target="_blank" rel="noopener">Yelp</a>
+      <a data-link="maps" target="_blank" rel="noopener">Google Maps</a>
+    </p>
+    <p class="site-footer__small">&copy; <span data-year></span> Karajillo &amp; Co.</p>
+  </footer>
+
+  <!-- Mobile quick actions -->
+  <nav class="quickbar" aria-label="Quick actions">
+    <a href="#menu">Menu</a>
+    <a data-tel>Call</a>
+    <a data-link="maps" target="_blank" rel="noopener">Directions</a>
+  </nav>
+
+  <!-- Lightbox -->
+  <dialog class="lightbox" data-lightbox aria-label="Photo viewer">
+    <button class="lightbox__close" type="button" data-lb-close aria-label="Close photo viewer">&times;</button>
+    <button class="lightbox__nav lightbox__nav--prev" type="button" data-lb-prev aria-label="Previous photo">&#8249;</button>
+    <figure class="lightbox__figure">
+      <img data-lb-img alt="" />
+      <figcaption data-lb-caption></figcaption>
+    </figure>
+    <button class="lightbox__nav lightbox__nav--next" type="button" data-lb-next aria-label="Next photo">&#8250;</button>
+  </dialog>
+
+  <script src="js/data.js"></script>
+  <script src="js/crema.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
